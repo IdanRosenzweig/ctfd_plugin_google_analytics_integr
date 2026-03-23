@@ -11,7 +11,7 @@ def load(app):
   # 1. Admin Control Panel
   @google_analytics_integr_bp.route("/admin/google_analytics_integr", methods=["GET", "POST"])
   @admins_only
-  def admin_google_analytics_integr():
+  def admin_google_analytics_integr_dashboard():
     if request.method == "POST":
       action = request.form.get("action")
       
