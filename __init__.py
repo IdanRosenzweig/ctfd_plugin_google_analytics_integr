@@ -8,7 +8,7 @@ def load(app):
   # google analytics integr blueprint
   google_analytics_integr_bp = Blueprint("google_analytics_integr", __name__, template_folder="templates")
 
-  # 1. Admin Control Panel
+  # admin dashboard
   @google_analytics_integr_bp.route("/admin/google_analytics_integr", methods=["GET", "POST"])
   @admins_only
   def admin_google_analytics_integr_dashboard():
